@@ -3,6 +3,7 @@ import os
 import requests
 from datetime import datetime
 import smtplib
+import time
 
 load_dotenv()
 
@@ -59,4 +60,6 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    while True:
+        time.sleep(60)
+        main()
